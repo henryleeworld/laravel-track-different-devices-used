@@ -1,4 +1,4 @@
-# Laravel 8 追蹤不同使用裝置
+# Laravel 10 追蹤不同使用裝置
 
 引入 ivanomatteo 的 laravel-device-tracking 套件來擴增追蹤不同使用裝置，紀錄包括作業系統、瀏覽器和客製化內容等以辨識出特定的使用者。
 
@@ -20,9 +20,13 @@ $ php artisan key:generate
 ```sh
 $ php artisan migrate
 ```
-- 執行安裝 Laravel Mix 引用的依賴項目，並執行所有 Mix 任務。
+- 執行安裝 Vite 和 Laravel 擴充套件引用的依賴項目。
 ```sh
-$ npm install && npm run dev
+$ npm install
+```
+- 執行正式環境版本化資源管道並編譯。
+```sh
+$ npm run build
 ```
 - 在瀏覽器中輸入已定義的路由 URL 來，例如：http://127.0.0.1:8000。
 - 你可以經由 `/register` 來進行註冊。
@@ -31,8 +35,8 @@ $ npm install && npm run dev
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/2RkCet3.png)
+![](https://i.imgur.com/0VxjkGH.png)
 > 建立新的帳號
 
-![](https://i.imgur.com/j8GtemD.png)
+![](https://i.imgur.com/Nlq37G5.png)
 > 使用建立的帳號登入後，進入預設歡迎頁面

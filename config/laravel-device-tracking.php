@@ -4,8 +4,10 @@
 use IvanoMatteo\LaravelDeviceTracking\DeviceHijackingDetectorDefault;
 
 return [
-    // if user_model is null, will be probed: App\Models\User and then App\User
-    'user_model' => 'App\Models\User', 
+    // if user_model is null, will be probed: App\Model\User and then App\User
+    'user_model' => null,
+
+    'detect_on_login' => true,
 
     // the device identifier cookie
     'device_cookie' => 'device_uuid',
